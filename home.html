@@ -23,5 +23,18 @@
     <div class="item-name">Plato 3</div>
     <div class="item-price">$8.75</div>
   </div>
+    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "07b93a3b-e2d4-4c7a-94ee-5c58e2a146ed", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "63547d6a-b882-43ef-a2fb-0f5353b2e2b2", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
 </body>
 </html>
